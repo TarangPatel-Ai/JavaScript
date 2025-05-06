@@ -5,6 +5,14 @@ let Hello1 = "How Are you..?";
 
 //alert(Hello);
 
+
+let x;
+let X = "Hello";
+
+alert('x is ' + x + ' and X is ' + X);
+
+
+
 document.getElementById('title').innerText = "Hello JavaScript How Are You...?"
 
 //Number Data
@@ -13,7 +21,7 @@ let n2 = 20;
 
 //Some opretors
 let n3 = n1 + n2;
-alert('n3 is ' + n3);
+//alert('n3 is ' + n3);
 
 //Boolean Data
 let b1 = true;
