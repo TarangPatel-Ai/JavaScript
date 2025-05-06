@@ -1,9 +1,9 @@
 
 const Hello = "Hello World!";
 
-let Hello1 = "How Are yOu.?";
+let Hello1 = "How Are you..?";
 
 alert(Hello);
 
-document.getElementById('title').innerText = "Hello JavaScript How Are You.?"
+document.getElementById('title').innerText = "Hello JavaScript How Are You...?"
 
