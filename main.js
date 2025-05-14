@@ -4,12 +4,34 @@ function Car(name, model, year){
     this.model = model;
     this.year = year;
 
-
+    //Method to display car details
     this.displayDetails = function(){
         console.log("Car Name is: " + this.name + " Model is: " + this.model + " Year is: " + this.year);
     }
 
 };
+
+//Another way to create an object
+let car = {
+    name:"Tata",
+    model:"Nexon",
+    year:2025,
+    displayDetails: function(){
+        console.log("Car Name is: " + this.name + " Model is: " + this.model + " Year is: " + this.year);
+    }
+};
+
+
+//Another way to create an object
+let car3 = {
+    name:"Tata",
+    model:"Nexon",
+    year:2022,
+}
+
+
+
+console.log("Car name: " + car3.name + " Model is: " + car3.model +  " Year is" + car3.year);
 
 let car1 = new Car("BMW", "X5", 2020);
 let car2 = new Car("Audi", "A8", 2021);
