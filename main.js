@@ -87,3 +87,12 @@ let b2 = false;
 //string(text) can be put in double qoute or in single quote
 let s1 = "Hello World!";
 let s2 = 'Hello JavaScript';
+
+function Student(name, age, rollno){
+    this.name = name;
+    this.age = age;
+    this.rollno = rollno;
+}
+
+let student1 = new Student("Jhon", 20, 2525);
+console.log("Student name is: " + student1.name + " Age is: " + student1.age + " Roll No is: " + student1.rollno);
