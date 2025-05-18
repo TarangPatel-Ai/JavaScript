@@ -96,3 +96,54 @@ function Student(name, age, rollno){
 
 let student1 = new Student("Jhon", 20, 2525);
 console.log("Student name is: " + student1.name + " Age is: " + student1.age + " Roll No is: " + student1.rollno);
+
+
+//Array
+
+let ageArray = [25,23,18,15,10,45,55,65,75,85,95];
+console.log("Age Array is: " + ageArray[1]);
+
+let carArray = ["Tata", "BMW", "Audi", "Mercedes", 25.5, true];
+console.log("Car Array is: " + carArray[0]);
+
+let mixArray = [1, "Tata", true, 25.5];
+console.log("Mix Array is: " + mixArray[3]);
+
+//push opreations on array
+mixArray.push("Hello Array");
+console.log("Mix Array is: " + mixArray);
+
+//pop operation on array
+mixArray.pop();
+console.log("Mix Array is: " + mixArray);
+
+//shift operation on array
+mixArray.shift();
+console.log("Mix Array is: " + mixArray);
+
+//unshift operation on array
+mixArray.unshift("Hello Array");
+console.log("Mix Array is: " + mixArray);
+
+
+function printLength(item){
+    console.log("Array of item is: " + item +" and Length is: " + item.length);
+}
+
+carArray.forEach(printLength);
+
+// PROBLEM:
+// Given  ageArray = [25,23,18,15,10,45,55,65,75,85,95];
+// use filter() array method to print only ages above 25.
+
+console.log("Age Array is: " + ageArray);
+function filterAge(item){
+    if(item>25){
+        console.log("Age is: " + item);
+    }
+}
+ageArray.forEach(filterAge);
+
+//Another way to filter the array
+let filterAgeArray = ageArray.filter(item => item > 25);
+console.log("Filter Age Array is: " + filterAgeArray);
