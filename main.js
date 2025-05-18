@@ -85,7 +85,7 @@ let b2 = false;
 
 
 //string(text) can be put in double qoute or in single quote
-let s1 = "Hello World!";
+let s1 = "Hello JavaScript!";
 let s2 = 'Hello JavaScript';
 
 function Student(name, age, rollno){
