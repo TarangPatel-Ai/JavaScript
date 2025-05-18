@@ -55,7 +55,7 @@ let bus2 = new Bus("GSRTC", 5000, 2025);
 console.log("Bus name: " + bus1.name + " price is: " + bus1.price +  " Year is" + bus1.year);
 console.log("Total Price of Bus is: " + (bus1.price + bus2.price));
 
-const Hello = "Hello World!";
+const Hello = "Hello World! Javascript!";
 
 let Hello1 = "How Are you..?";
 
@@ -85,7 +85,7 @@ let b2 = false;
 
 
 //string(text) can be put in double qoute or in single quote
-let s1 = "Hello World!";
+let s1 = "Hello JavaScript!";
 let s2 = 'Hello JavaScript';
 
 function Student(name, age, rollno){
