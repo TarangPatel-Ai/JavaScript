@@ -147,3 +147,59 @@ ageArray.forEach(filterAge);
 //Another way to filter the array
 let filterAgeArray = ageArray.filter(item => item > 25);
 console.log("Filter Age Array is: " + filterAgeArray);
+
+
+/*Today we will learn flow control ex. ef...else, switch case etc.*/
+
+let ageOfSuresh = 45;
+
+if (ageOfSuresh>=50) {
+    console.log("Suresh is over 50 Years");
+}
+else{
+    console.log("Suresh is below 50 Years");
+}
+
+//Switch Demo
+
+let day = 2;
+
+switch(day){
+    case 1 : console.log("It's Monday"); break;
+    case 2 : console.log("It's Tuesday"); break;
+    case 3 : console.log("It's Wednesday"); break;
+    case 4 : console.log("It's Thursday"); break;
+    case 5 : console.log("It's Friday"); break;
+    case 6 : console.log("It's Saturday"); break;
+    case 7 : console.log("It's Sunday"); break;
+    default: console.log("Invalid Day"); break;    
+
+}
+
+//For loop
+for(i=0; i<5; i++){
+    //Do something here
+    console.log("i = " + i);
+}
+
+console.log(" ");
+console.log("For loop with break");
+//For loop with break
+for(i=0; i<5; i++){
+    //Do something here
+    if(i==3)
+        break;
+
+    console.log("i = " + i);
+}
+
+console.log(" ");
+console.log("For loop with continue");
+//For loop with break
+for(i=0; i<5; i++){
+    //Do something here
+    if(i<2)
+     continue;
+
+    console.log("i = " + i);
+}
