@@ -203,3 +203,42 @@ for(i=0; i<5; i++){
 
     console.log("i = " + i);
 }
+
+
+console.log(" ");
+console.log("for-of loop specially for an array");
+
+for(let age of ageArray){
+    console.log("Age: " + age)
+}
+
+
+console.log(" ");
+console.log("for-of loop specially for an array with filter");
+const filteredAges = ageArray.filter(item => item < 50);
+for(let age of filteredAges){
+    console.log("Age: " + age)
+}
+
+
+console.log(" ");
+console.log("Challenge: Create Function having name and age , then Create 5 person object and then  for-of loop, to displaty only those person whose age is less then 50");
+function personNameAge(name, age){
+    this.name = name;
+    this.age = age;
+}
+
+let person1 = new personNameAge("Tony Stark",25);
+let person2 = new personNameAge("Thor",55);
+let person3 = new personNameAge("Hulk",30);
+let person4 = new personNameAge("Captain America",60);
+let person5 = new personNameAge("Black Panther",22);
+
+// Create an array of person objects
+const people = [person1, person2, person3, person4, person5];
+
+const filteredPerson = people.filter(item => item.age<50);
+
+for(let personDetails of filteredPerson){
+    console.log("Person Name is: " + personDetails.name + " And Age is: " + personDetails.age);
+}
