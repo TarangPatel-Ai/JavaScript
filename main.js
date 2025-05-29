@@ -242,3 +242,15 @@ const filteredPerson = people.filter(item => item.age<50);
 for(let personDetails of filteredPerson){
     console.log("Person Name is: " + personDetails.name + " And Age is: " + personDetails.age);
 }
+
+
+
+// Function to display person details
+let userOne = {
+    name: "John Doe",
+    age: 30,
+}
+
+for (let userDetails in userOne){
+    console.log("User Property is: " + userDetails + " And Value is:" + userOne[userDetails]);
+}
