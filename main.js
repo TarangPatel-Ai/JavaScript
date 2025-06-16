@@ -254,3 +254,19 @@ let userOne = {
 for (let userDetails in userOne){
     console.log("User Property is: " + userDetails + " And Value is:" + userOne[userDetails]);
 }
+
+
+
+// Spread Rest Operator
+
+console.log(" ");
+console.log("Spread Rest Operator");
+let numberArray = [10,20,50,45,33];
+
+function f1(a,b,c,x,y){
+    return a+b+c+x+y;  
+}
+
+console.log(f1(numberArray[0], numberArray[1], numberArray[2], numberArray[3], numberArray[4]));
+
+console.log(f1(...numberArray));
